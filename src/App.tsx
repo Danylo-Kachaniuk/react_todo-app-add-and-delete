@@ -11,10 +11,6 @@ import { Todo } from './types/Todo';
 import { FilterType } from './types/FilterType';
 import { ErrorMessage } from './types/ErrorMessage';
 
-{
-  /*const [loading, setLoading] = useState(false);*/
-}
-
 export const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [tempTodo, setTempTodo] = useState<Todo | null>(null);
@@ -147,7 +143,6 @@ export const App: React.FC = () => {
   return (
     <div className="todoapp">
       <h1 className="todoapp__title">todos</h1>
-
       <div className="todoapp__content">
         <TodoHeader
           onAdd={handleAddTodo}
